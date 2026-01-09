@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from amazon_paapi import AmazonApi
+from amazon.paapi import AmazonApi
 from fastapi.responses import JSONResponse
 
 app = FastAPI()
@@ -28,3 +28,4 @@ def get_product(asin: str):
 
     except Exception as e:
         return JSONResponse({"error": str(e)}, status_code=500)
+
