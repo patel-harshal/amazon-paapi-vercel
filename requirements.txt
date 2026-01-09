@@ -1,2 +1,2 @@
 fastapi
-amazon-paapi
+python-amazon-paapi
